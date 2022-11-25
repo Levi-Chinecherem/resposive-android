@@ -14,7 +14,7 @@ header {
     background: white;
     text-align: center;
 }
-@media (min-width: 750px) {
+@media (max-width: 750px) {
     header {
         text-align: left;
     }
@@ -107,7 +107,7 @@ ul {
     margin-bottom: 40px;
     text-align: center;
 }
-@media (min-width: 750px) {
+@media (max-width: 550px) {
     .icon {
         margin-bottom:0;
     }
@@ -137,7 +137,7 @@ ul {
     background: white;
     margin: 5px;
 }
-@media (min-width: 550px) {
+@media (max-width: 550px) {
     .card {
         text-align: left;
     }
@@ -182,5 +182,10 @@ text-decoration: none;
 
 .spread{
     display: grid;
-    grid-template-columns: repeat(3, 280px);
+    grid-template-columns: repeat(3, 300px);
+}
+@media (max-width: 813px) {
+    .spread {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
